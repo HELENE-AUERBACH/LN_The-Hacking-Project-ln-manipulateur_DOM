@@ -1,0 +1,14 @@
+let nbPElements = document.getElementsByTagName("p").length;
+let coucouElementTextContent = document.getElementById("coucou").textContent;
+let URLThirdAElement = document.getElementsByTagName("a")[2].href;
+let nbElementsWithCompteMoiClass = document.getElementsByClassName("compte-moi").length;
+let nbLiElementsWithCompteMoiClass = document.querySelectorAll("li.compte-moi").length;
+let nbLiElementsInOlWithCompteMoiClass = document.querySelectorAll("ol li.compte-moi").length;
+let unvisibleElementTextContent = document.querySelectorAll("div ul")[1].getElementsByTagName("li")[0].textContent;
+console.log(`Il y a ${nbPElements} éléments <p> présents dans la page HTML.`);
+console.log(`Le contenu texte de l\'élément portant l\'id coucou est : \"${coucouElementTextContent}\".`);
+console.log(`L\'URL vers laquelle pointe le 3ème élément <a> de la page HTML est : \"${URLThirdAElement}\".`);
+console.log(`Il y a ${nbElementsWithCompteMoiClass} éléments qui portent la classe compte-moi.`);
+console.log(`Il y a ${nbLiElementsWithCompteMoiClass} éléments <li> qui portent la classe compte-moi.`);
+console.log(`Il y a ${nbLiElementsInOlWithCompteMoiClass} éléments <li> qui sont situés dans une liste ordonnée et qui portent la classe compte-moi.`);
+console.log(`Le contenu texte du premier élément de la liste (tag <li>) caché visuellement de l'utilisateur qui se trouve dans le second <ul> du seul élément <div> de la page est : \"${unvisibleElementTextContent}\".`);
